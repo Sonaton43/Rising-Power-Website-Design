@@ -1,3 +1,95 @@
+/* Roboto Fonts */
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Italic';
+  src: url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+}
+
+/* Lato Fonts */
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../fonts/Lato/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato Italic';
+  src: url('../fonts/Lato/Lato-Italic.ttf') format('truetype');
+}
+
+/* Montserrat Fonts */
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+/* Nunito Fonts */
+@font-face {
+  font-family: 'Nunito Regular';
+  src: url('../fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Medium';
+  src: url('../fonts/Nunito/Nunito-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito SemiBold';
+  src: url('../fonts/Nunito/Nunito-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Bold';
+  src: url('../fonts/Nunito/Nunito-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nunito Medium Italic';
+  src: url('../fonts/Nunito/Nunito-MediumItalic.ttf') format('truetype');
+}
+
+/* Oswald Fonts */
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url('../fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald SemiBold';
+  src: url('../fonts/Oswald/Oswald-SemiBold.ttf') format('truetype');
+}
+
+/* Poppins Fonts */
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins Italic';
+  src: url('../fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+}
+
 /* Root Variables */
 :root {
   --primary-color: #007bff;
@@ -9,9 +101,25 @@
   --light-color: #f8f9fa;
   --dark-color: #343a40;
 
-  --font-light: 'Roboto Light', 'Lato Light', 'Open Sans Light', sans-serif;
-  --font-semibold: 'Poppins SemiBold', 'Montserrat SemiBold', 'Nunito SemiBold', sans-serif;
-  --font-bold: 'Oswald Bold', 'Bebas Neue Bold', 'Raleway Bold', sans-serif;
+  --roboto-light: 'Roboto Light', sans-serif;
+  --lato-light: 'Lato Light', sans-serif;
+  --lato-regular: 'Lato Regular', sans-serif;
+  --nunito-regular: 'Nunito Regular', sans-serif;
+  --poppins-regular: 'Poppins Regular', sans-serif;
+  --nunito-medium: 'Nunito Medium', sans-serif;
+  --poppins-medium: 'Poppins Medium', sans-serif;
+  --montserrat-medium: 'Montserrat Medium', sans-serif;
+  --montserrat-semibold: 'Montserrat SemiBold', sans-serif;
+  --nunito-semibold: 'Nunito SemiBold', sans-serif;
+  --poppins-semibold: 'Poppins SemiBold', sans-serif;
+  --oswald-semibold: 'Oswald SemiBold', sans-serif;
+  --roboto-bold: 'Roboto Bold', sans-serif;
+  --nunito-bold: 'Nunito Bold', sans-serif;
+  --poppins-bold: 'Poppins Bold', sans-serif;
+  --oswald-bold: 'Oswald Bold', sans-serif;
+  --roboto-italic: 'Roboto Italic', sans-serif;
+  --lato-italic: 'Lato Italic', sans-serif;
+  --poppins-italic: 'Poppins Italic', sans-serif;
 }
 
 /* Global Styles */
