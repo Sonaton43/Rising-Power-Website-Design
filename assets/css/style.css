@@ -1,0 +1,49 @@
+/* Root Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+
+  --font-light: 'Roboto Light', 'Lato Light', 'Open Sans Light', sans-serif;
+  --font-semibold: 'Poppins SemiBold', 'Montserrat SemiBold', 'Nunito SemiBold', sans-serif;
+  --font-bold: 'Oswald Bold', 'Bebas Neue Bold', 'Raleway Bold', sans-serif;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-light);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* Carousel */
+.slick-carousel img {
+  width: 100%;
+  height: auto;
+}
+
+/* Popup */
+.popup-link img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
