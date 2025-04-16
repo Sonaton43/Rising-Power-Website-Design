@@ -213,11 +213,17 @@ body {
 /* Info Bar Css End*/
 /*==================*/
 /* Search Bar Css Start*/
+.menu-icon{
+  display: none;
+}
 .search-bar{
   padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.logo{
+  display: flex;
 }
 .logo img{
   height: auto;
@@ -257,6 +263,9 @@ body {
   height: 20px;
   width: 20px;
 }
+.cartorbtn{
+  display: flex;
+}
 .cart {
   display: flex;
   justify-content: flex-end;
@@ -293,6 +302,39 @@ body {
   font-weight: bold;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
-
+@media(max-width: 992px){
+  .logo img{
+    max-width: 200px;
+  }
+  .search-body input{
+    width: 250px;
+  }
+}
+@media(max-width: 992px){
+  .custom-contact{
+    display: none;
+  }
+}
+@media(max-width: 590px){
+  .info-bar{
+    display: none;
+  }
+  .search-bar{
+    padding: 10px 15px;
+  }
+  .menu-icon{
+    display: block;
+    margin-right: 10px;
+  }
+  .logo img{
+    max-width: 110px;
+  }
+  .search-body input{
+    width: 190px;
+  }
+  .cartorbtn{
+    display: none;
+  }
+}
 /* Search Bar Css End*/
 
