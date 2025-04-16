@@ -107,5 +107,62 @@ body {
   padding: 0;
 }
 
-
+/* Info Bar Css Start*/
+.info-bar{
+  background-color: var(--light-color);
+  margin: 0;
+  padding: 7px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-primary-btn {
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: var(--italic-2);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--light-color);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+}
+.custom-primary-btn img{
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  padding: 0;
+}
+.custom-primary-btn:hover {
+  color: var(--light-color);
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.info-details{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.info-mail,.info-phone{
+  font-family: var(--italic-2);
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.info-phone{
+  margin-left: 15px;
+}
+.info-mail img,.info-phone img{
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+.info-mail img{
+  margin-right: 3px;
+}
+/* Info Bar Css End*/
 
