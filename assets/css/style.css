@@ -92,14 +92,18 @@
 
 /* Root Variables */
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
+  --primary-color: #245F73;
+  --secondary-color: #733E24;
+  --light-color: #F2F0EF;
+  --dark-light-color: #BBBDBC;
+  --dark-color: #343a40;
+  --white-color: #FFFFFFFF;
+  --black-color: #000000;
   --success-color: #28a745;
   --danger-color: #dc3545;
   --warning-color: #ffc107;
   --info-color: #17a2b8;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
+
 
   --roboto-light: 'Roboto Light', sans-serif;
   --lato-light: 'Lato Light', sans-serif;
