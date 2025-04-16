@@ -165,4 +165,60 @@ body {
   margin-right: 3px;
 }
 /* Info Bar Css End*/
+/*==================*/
+/* Search Bar Css Start*/
+.search-bar{
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img{
+  height: 35px;
+  width: 250;
+}
+.search-body{
+  width: fit-content;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.search-body input{
+  border: none;
+  background-color: var(--light-color);
+  padding: 7px 15px;
+  outline: none;
+  width: 380px;
+  height: 40px;
+  border-radius: 3px;
+}
+.search-body button{
+  position: absolute;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  z-index: 99;
+  border: transparent;
+  height: 42px;
+  border-radius: 0px 3px 3px 0px;
+  padding: 9px;
+  right: -1px;
+  top: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-body button img{
+  height: 20px;
+  width: 20px;
+}
+.cart{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.cart span{
+  margin-left: 10px;
+  font-size: 18px;
+}
+/* Search Bar Css End*/
 
