@@ -67,11 +67,11 @@
 
 /* Root Variables */
 :root {
-  --primary-color: #245F73;
-  --secondary-color: #733E24;
-  --light-color: #F2F0EF;
+  --primary-color: #c32128;
+  --secondary-color: #f7ba18;
+  --light-color: #f3f5f6;
   --dark-light-color: #BBBDBC;
-  --dark-color: #343a40;
+  --dark-color: #585e5e;
   --white-color: #FFFFFFFF;
   --black-color: #000000;
   --success-color: #28a745;
@@ -96,6 +96,52 @@
   --bold-1: 'Roboto Bold', sans-serif;
   --bold-2: 'Nunito Bold', sans-serif;
   --bold-3: 'Poppins Bold', sans-serif;
+}
+.primary-btn {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(135deg, var(--secondary-color), var(--secondary-color));
+  color: var(--white-color);
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* Shine effect using ::before */
+.primary-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: rotate(25deg);
+  animation: shine 4s infinite;
+  pointer-events: none;
+}
+
+.primary-btn:hover {
+  color: var(--white-color);
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
 }
 
 /* Global Styles */
@@ -168,14 +214,14 @@ body {
 /*==================*/
 /* Search Bar Css Start*/
 .search-bar{
-  padding: 15px 25px;
+  padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logo img{
-  height: 35px;
-  width: 250;
+  height: auto;
+  width: auto
 }
 .search-body{
   width: fit-content;
@@ -189,7 +235,7 @@ body {
   padding: 7px 15px;
   outline: none;
   width: 380px;
-  height: 40px;
+  height: 35px;
   border-radius: 3px;
 }
 .search-body button{
@@ -198,7 +244,7 @@ body {
   border: 2px solid var(--primary-color);
   z-index: 99;
   border: transparent;
-  height: 42px;
+  height: 37px;
   border-radius: 0px 3px 3px 0px;
   padding: 9px;
   right: -1px;
@@ -211,14 +257,42 @@ body {
   height: 20px;
   width: 20px;
 }
-.cart{
+.cart {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+  position: relative;
 }
-.cart span{
-  margin-left: 10px;
+.cart span {
   font-size: 18px;
 }
+.cart-icon {
+  position: relative;
+  display: inline-block;
+}
+.cart-icon img {
+  height: 30px;
+  width: 30px;
+}
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+.cart-count span {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 7px;
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
 /* Search Bar Css End*/
 
