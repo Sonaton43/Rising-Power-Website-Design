@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO Meta Tags -->
+  <title>Rising Power - Official Site</title>
+  <meta name="description" content="Rising Power is your source for the latest in tech, innovation, and global trends." />
+  <meta name="keywords" content="Rising Power, Technology, Innovation, Business, Trends" />
+  <meta name="author" content="Rising Power Team" />
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -19,6 +25,19 @@
 </head>
 <body>
 
+  <!--Header Start-->
+  <div class="info-bar">
+    <div class="custom-primary-btn">Sales Geography</div>
+    <div class="info-details">
+
+    </div>
+  </div>
+  <div class="search-bar">
+    
+  </div>
+  <div class="menu-bar">
+
+  </div>
 
   <!-- JQuery JS -->
   <script src="assets/js/jquery.min.js"></script>
@@ -30,29 +49,5 @@
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <!-- Magnific-Popup JS -->
   <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.slick-carousel').slick({
-        autoplay: true,
-        dots: true,
-        arrows: false
-      });
-
-      $('.popup-link').magnificPopup({
-        type: 'image',
-        gallery: {
-          enabled: true
-        }
-      });
-
-      // Example Waypoint
-      new Waypoint({
-        element: document.getElementById('waypoint-element'),
-        handler: function(direction) {
-          console.log('Waypoint triggered!');
-        }
-      });
-    });
-  </script>
 </body>
 </html>

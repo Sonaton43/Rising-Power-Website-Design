@@ -80,22 +80,22 @@
   --info-color: #17a2b8;
 
 
-  --italic-primary: 'Lato Italic', sans-serif;
-  --italic-secondary: 'Poppins Italic', sans-serif;
+  --italic-1: 'Lato Italic', sans-serif;
+  --italic-2: 'Poppins Italic', sans-serif;
 
-  --light-primary: 'Roboto Light', sans-serif;
-  --light-secondary: 'Lato Light', sans-serif;
+  --light-1: 'Roboto Light', sans-serif;
+  --light-2: 'Lato Light', sans-serif;
 
-  --regular-primary: 'Nunito Regular', sans-serif;
-  --regular-secondary: 'Poppins Regular', sans-serif;
+  --regular-1: 'Nunito Regular', sans-serif;
+  --regular-2: 'Poppins Regular', sans-serif;
 
-  --montserrat-semibold: 'Montserrat SemiBold', sans-serif;
-  --nunito-semibold: 'Nunito SemiBold', sans-serif;
-  --poppins-semibold: 'Poppins SemiBold', sans-serif;
+  --semibold-1: 'Montserrat SemiBold', sans-serif;
+  --semibold-2: 'Nunito SemiBold', sans-serif;
+  --semibold-3: 'Poppins SemiBold', sans-serif;
 
-  --roboto-bold: 'Roboto Bold', sans-serif;
-  --nunito-bold: 'Nunito Bold', sans-serif;
-  --poppins-bold: 'Poppins Bold', sans-serif;
+  --bold-1: 'Roboto Bold', sans-serif;
+  --bold-2: 'Nunito Bold', sans-serif;
+  --bold-3: 'Poppins Bold', sans-serif;
 }
 
 /* Global Styles */
@@ -107,28 +107,5 @@ body {
   padding: 0;
 }
 
-/* Header */
-header {
-  background-color: var(--primary-color);
-  color: #fff;
-}
 
-/* Footer */
-footer {
-  background-color: var(--secondary-color);
-  color: #fff;
-}
-
-/* Carousel */
-.slick-carousel img {
-  width: 100%;
-  height: auto;
-}
-
-/* Popup */
-.popup-link img {
-  max-width: 100%;
-  height: auto;
-  cursor: pointer;
-}
 
