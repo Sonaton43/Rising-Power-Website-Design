@@ -69,16 +69,96 @@
     
 
   </div>
+
   <div class="menu-bar">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Power Sector</a><i class="fa-solid fa-chevron-down chevron-down"></i></li>
-      <li><a href="#">Garments Machinerys</a><i class="fa-solid fa-chevron-down chevron-down"></i></li>
-      <li><a href="#">Smart Film Base</a><i class="fa-solid fa-chevron-down chevron-down"></i></li>
+      <li><a href="#" class="menu-active">Home</a></li>
+  
+      <li class="drop-down">
+        <a href="#" onclick="toggleDropdown(this)">Power Sector <i class="fa-solid fa-chevron-down chevron-down"></i></a>
+        <div class="drop-down-menu">
+          <ul>
+            <li><a href="#">Turbine island</a></li>
+            <li><a href="#">Steam turbines</a></li>
+            <li><a href="#">Turbogenerators</a></li>
+            <li><a href="#">Drive turbines</a></li>
+          </ul>
+        </div>
+      </li>
+  
+      <li class="drop-down">
+        <a href="#" onclick="toggleDropdown(this)">Garments Machinerys <i class="fa-solid fa-chevron-down chevron-down"></i></a>
+        <div class="drop-down-menu">
+          <ul>
+            <li><a href="#">Turbine island</a></li>
+            <li><a href="#">Steam turbines</a></li>
+            <li><a href="#">Turbogenerators</a></li>
+            <li><a href="#">Drive turbines</a></li>
+          </ul>
+        </div>
+      </li>
+  
+      <li class="drop-down">
+        <a href="#" onclick="toggleDropdown(this)">Smart Film Base <i class="fa-solid fa-chevron-down chevron-down"></i></a>
+        <div class="drop-down-menu">
+          <ul>
+            <li><a href="#">Turbine island</a></li>
+            <li><a href="#">Steam turbines</a></li>
+            <li><a href="#">Turbogenerators</a></li>
+            <li><a href="#">Drive turbines</a></li>
+          </ul>
+        </div>
+      </li>
+  
       <li><a href="#">Mission</a></li>
       <li><a href="#">About Us</a></li>
     </ul>
   </div>
+  
+
+  <script>
+    function toggleDropdown(element) {
+      event.preventDefault();
+  
+      const parentLi = element.closest('li.drop-down');
+      const menu = parentLi.querySelector('.drop-down-menu');
+      const chevron = parentLi.querySelector('.chevron-down');
+  
+      // Close other dropdowns
+      document.querySelectorAll('.drop-down-menu').forEach(m => {
+        if (m !== menu) m.classList.remove('active');
+      });
+      document.querySelectorAll('.menu-bar > ul > li').forEach(li => {
+        if (li !== parentLi) li.classList.remove('menu-active');
+      });
+      document.querySelectorAll('.chevron-down').forEach(c => {
+        if (c !== chevron) c.classList.remove('menu-active');
+      });
+  
+      // Toggle current dropdown
+      const isOpen = menu.classList.contains('active');
+      menu.classList.toggle('active', !isOpen);
+      parentLi.classList.toggle('menu-active', !isOpen);
+      chevron.classList.toggle('menu-active', !isOpen);
+    }
+  
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.drop-down')) {
+        document.querySelectorAll('.drop-down-menu').forEach(menu => {
+          menu.classList.remove('active');
+        });
+        document.querySelectorAll('.menu-bar > ul > li').forEach(li => {
+          li.classList.remove('menu-active');
+        });
+        document.querySelectorAll('.chevron-down').forEach(c => {
+          c.classList.remove('menu-active');
+        });
+      }
+    });
+  </script>
+  
+  
 
   <!-- JQuery JS -->
   <script src="assets/js/jquery.min.js"></script>
