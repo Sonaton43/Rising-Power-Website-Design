@@ -448,7 +448,7 @@ body {
 /*Menu Bar Responsive*/
 .menu-bar-responsive {
   width: 300px;
-  height: 100%;
+  min-height: 100vh;
   background-color: var(--secondary-color);
   position: relative;
   transform: translateX(-100%); 
