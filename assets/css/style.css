@@ -647,7 +647,7 @@ body {
   }
   .category-slide-body {
     width: 100%;
-    padding: 40px 20px;
+    padding: 60px 20px;
     position: relative;
     background-color: #f8f8f8;
   }
@@ -667,10 +667,11 @@ body {
   }
 
   .category-slider h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 20px;
     line-height: 1.4;
-    font-family: Arial, sans-serif;
+    font-family: var(--semibold-3);
+    font-weight: 700;
   }
   .category-slider h3 span {
     display: block;
@@ -693,6 +694,10 @@ body {
     font-weight: bold;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    z-index: 999;
   }
 
   .category-slider .shop-btn:hover {
@@ -706,7 +711,7 @@ body {
 
   .category-arrows {
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 25px;
     display: flex;
     z-index: 9999;
@@ -746,7 +751,7 @@ body {
     }
 
     .category-slider h3 {
-      font-size: 20px;
+      font-size: 24px;
     }
 
     .category-slider img {
@@ -765,12 +770,12 @@ body {
     }
 
     .category-slider h3 {
-      font-size: 18px;
+      font-size: 24px;
       margin-bottom: 15px;
     }
 
     .category-slider img {
-      width: 80px;
+      width: 100px;
       bottom: 15px;
       right: 15px;
     }
@@ -797,11 +802,11 @@ body {
     }
 
     .category-slider h3 {
-      font-size: 16px;
+      font-size: 24px;
     }
 
     .category-slider img {
-      width: 60px;
+      width: 120px;
     }
 
     .category-slider .shop-btn {
