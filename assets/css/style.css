@@ -682,6 +682,10 @@ body {
     bottom: 20px;
     right: 20px;
     object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  .category-slider:hover img {
+    transform: translateY(-20px); /* Moves image up */
   }
 
   .category-slider .shop-btn {
@@ -953,7 +957,7 @@ body {
     position: relative;
     top: 100px;
     opacity: 0;
-    padding: 10px 20px;
+    padding: 7px 15px;
     margin-top: 10px;
     color: var(--white-color);
     text-decoration: none;
