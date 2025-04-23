@@ -677,10 +677,10 @@ body {
     display: block;
   }
   .category-slider img {
-    width: 120px;
+    width: 170px;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 0px;
     object-fit: contain;
     transition: transform 0.3s ease;
   }
