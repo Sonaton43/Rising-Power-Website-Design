@@ -986,3 +986,105 @@ body {
     }
   }
 
+  .footer {
+    background-color: var(--light-color);
+    font-family: var(--regular-2);
+    margin-top: 50px;
+  }
+  .footer>.row{
+    padding: 50px 30px 10px 30px ;
+  }
+  .company-details img{
+    width: 300px;
+    height: auto;
+  }
+  .company-details p{
+    font-size: 15px !important;
+    font-family: var(--italic-1);
+  }
+  .project-gallery {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .project-gallery img {
+    min-height: 120px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .footer h5 {
+    font-family: var(--semibold-3);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    color: var(--dark-color);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-list,
+  .footer-social {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list li,
+  .footer-social li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-list a,
+  .footer-social a {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-family: var(--semibold-2);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-list a:hover,
+  .footer-social a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  .location p{
+    font-size: 14px;
+    font-family: var(--italic-1);
+    line-height: 28px;
+  }
+  .location p .i{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .footer-social i {
+    margin-right: 8px;
+    color: var(--primary-color);
+  }
+  .footer-bottom {
+    background-color: var(--light-color);
+    border-top: 1px solid var(--dark-light-color);
+  }
+  .footer-bottom p{
+    margin: 0;
+    font-family: var(--semibold-2);
+    color: var(--dark-color);
+    padding: 15px;
+  }
+  
+
+  
