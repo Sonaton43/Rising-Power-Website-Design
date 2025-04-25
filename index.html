@@ -21,8 +21,18 @@
   <link rel="stylesheet" href="assets/vendor/slick/slick-theme.css" />
   <!-- Magnific-Popup CSS -->
   <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
-  <!-- Fontawsome CSS -->
+  <!-- Fontawesome CSS -->
   <link rel="stylesheet" href="/assets/css/all.min.css" />
+
+  <!-- Added CSS for Sticky Behavior -->
+  <style>
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 
@@ -40,11 +50,9 @@
           <span>+88 01711-485193</span>
         </div> 
     </div>
-
   </div>
 
   <div class="search-bar">
-    
     <div class="logo">
       <img class="menu-icon bar-icon" src="assets/vendor/icons/menu.svg" alt="menu.svg">
       <img src="images/risinglogo.png" alt="risinglogo.png">
@@ -68,8 +76,6 @@
         <span>Cart</span>
       </div>
     </div>
-    
-
   </div>
 
   <div class="menu-bar">
@@ -120,9 +126,9 @@
   <!-- Mobile Menu -->
   <div class="menu-bar-responsive">
     <div class="cross-icon x-icon">
-      <i class="fa-solid fa-xmark i "></i>
+      <i class="fa-solid fa-xmark i"></i>
     </div>
-    <div class=" pt-3 px-3">
+    <div class="pt-3 px-3">
       <div class="menu-bar-responsive-btn">
         <a href="#" class="custom-primary-btn">
           <img src="assets/vendor/icons/pie-chart.svg" alt="pie-chart.svg"> Sales Geography
@@ -133,7 +139,7 @@
       <li><a href="#" class="menu-active">Home</a></li>
   
       <li class="drop-down-responsive">
-        <a href="#"><div class="d-flex justify-content-between">Power Sector <i class="fa-solid fa-chevron-down chevron-down-responsive"></i></div></i></a>
+        <a href="#"><div class="d-flex justify-content-between">Power Sector <i class="fa-solid fa-chevron-down chevron-down-responsive"></i></div></a>
         <div class="drop-down-menu-responsive">
           <ul>
             <li><a href="#">Turbine island</a></li>
@@ -157,7 +163,7 @@
       </li>
   
       <li class="drop-down-responsive">
-        <a href="#"><div class="d-flex justify-content-between">Smart Film Base <i class="fa-solid fa-chevron-down chevron-down-responsive "></i></div></a>
+        <a href="#"><div class="d-flex justify-content-between">Smart Film Base <i class="fa-solid fa-chevron-down chevron-down-responsive"></i></div></a>
         <div class="drop-down-menu-responsive">
           <ul>
             <li><a href="#">PDLC Film</a></li>
@@ -208,14 +214,6 @@
         </div>
       </div>
     </div>
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> -->
   </div>
   <!--Slider End-->
 
@@ -561,25 +559,18 @@
       </div>
     </div>
   </div>
-
 </footer>
 <!-- Footer Bottom -->
 <div class="footer-bottom text-center" >
-  <p>&copy; 2025 Rising Power. All rights reserved.</p>
+  <p>© 2025 Rising Power. All rights reserved.</p>
 </div>
 <!-- Footer End -->
-
-
-
-
-  
-  
 
   <!-- JQuery JS -->
   <script src="assets/js/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <!-- Fontawsome JS -->
+  <!-- Fontawesome JS -->
   <script src="assets/js/all.min.js"></script>
   <!-- Slick JS -->
   <script src="assets/vendor/slick/slick.min.js"></script>
@@ -588,7 +579,7 @@
   <!-- Magnific-Popup JS -->
   <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-
+  <!-- Existing Scripts -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const headings = document.querySelectorAll(".category-slider h3");
@@ -600,14 +591,13 @@
     });
   </script>
   
-
   <script>
     $(document).ready(function(){
       $('.category-slide-body').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false, // Disable default arrows
+        arrows: false,
         responsive: [
           {
             breakpoint: 1024,
@@ -633,7 +623,6 @@
         ]
       });
 
-      // Custom arrow functionality
       $('#prev-arrow').on('click', function() {
         $('.category-slide-body').slick('slickPrev');
       });
@@ -643,6 +632,7 @@
       });
     });
   </script>
+  
   <script>
     function toggleDropdown(element) {
       event.preventDefault();
@@ -651,7 +641,6 @@
       const menu = parentLi.querySelector('.drop-down-menu');
       const chevron = parentLi.querySelector('.chevron-down');
   
-      // Close other dropdowns
       document.querySelectorAll('.drop-down-menu').forEach(m => {
         if (m !== menu) m.classList.remove('active');
       });
@@ -662,14 +651,12 @@
         if (c !== chevron) c.classList.remove('menu-active');
       });
   
-      // Toggle current dropdown
       const isOpen = menu.classList.contains('active');
       menu.classList.toggle('active', !isOpen);
       parentLi.classList.toggle('menu-active', !isOpen);
       chevron.classList.toggle('menu-active', !isOpen);
     }
   
-    // Close dropdown when clicking outside
     document.addEventListener('click', function (e) {
       if (!e.target.closest('.drop-down')) {
         document.querySelectorAll('.drop-down-menu').forEach(menu => {
@@ -696,7 +683,6 @@
       toggleLink.addEventListener("click", (e) => {
         e.preventDefault();
     
-        // Close other open dropdowns and remove menu-active
         dropdowns.forEach(item => {
           const otherMenu = item.querySelector(".drop-down-menu-responsive > ul");
           const otherChevron = item.querySelector(".chevron-down-responsive");
@@ -709,59 +695,69 @@
           }
         });
     
-        // Toggle current dropdown
         submenu.classList.toggle("active");
         chevron.classList.toggle("rotate-up");
         toggleLink.classList.toggle("menu-active");
       });
     
-      // Handle menu item click inside dropdown
       submenu.querySelectorAll("li a").forEach(link => {
         link.addEventListener("click", () => {
-          // Close all dropdowns
           dropdowns.forEach(item => {
             item.querySelector(".drop-down-menu-responsive > ul").classList.remove("active");
             item.querySelector(".chevron-down-responsive").classList.remove("rotate-up");
-            item.querySelector("a").classList.remove("menu-active");
+            item.querySelector("a").classList.remove("menu-learn");
           });
     
-          // Remove active class from all <li>
           document.querySelectorAll(".menu-bar-responsive ul > li").forEach(li => {
             li.querySelector("a").classList.remove("menu-active");
           });
         });
       });
     });
-    </script>
+  </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const barIcon = document.querySelector(".bar-icon");
-        const xIcon = document.querySelector(".x-icon");
-        const fullscreenNav = document.querySelector(".menu-bar-responsive");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const barIcon = document.querySelector(".bar-icon");
+      const xIcon = document.querySelector(".x-icon");
+      const fullscreenNav = document.querySelector(".menu-bar-responsive");
     
-        barIcon.addEventListener("click", function () {
-            if (fullscreenNav.classList.contains("active")) {
-    
-                fullscreenNav.classList.add("out");
-    
-                setTimeout(() => {
-                    fullscreenNav.classList.remove("active", "out");
-                }, 300); 
-            } else {
-                fullscreenNav.classList.add("active");
-            }
-        });
-        xIcon.addEventListener("click", function () {
-    
-            fullscreenNav.classList.add("out");
-    
-            setTimeout(() => {
-                fullscreenNav.classList.remove("active");
-                fullscreenNav.classList.remove("out");
-            }, 300);
-        });
+      barIcon.addEventListener("click", function () {
+        if (fullscreenNav.classList.contains("active")) {
+          fullscreenNav.classList.add("out");
+          setTimeout(() => {
+            fullscreenNav.classList.remove("active", "out");
+          }, 300); 
+        } else {
+          fullscreenNav.classList.add("active");
+        }
+      });
+      xIcon.addEventListener("click", function () {
+        fullscreenNav.classList.add("out");
+        setTimeout(() => {
+          fullscreenNav.classList.remove("active");
+          fullscreenNav.classList.remove("out");
+        }, 300);
+      });
     });
-    </script>
+  </script>
+
+  <!-- Added Script for Sticky Behavior -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const menuBar = document.querySelector('.menu-bar');
+      const searchBar = document.querySelector('.search-bar');
+      const scrollPosition = window.scrollY;
+
+      if (scrollPosition >= 43) {
+        menuBar.classList.add('sticky');
+        searchBar.classList.add('sticky');
+      } else {
+        menuBar.classList.remove('sticky');
+        searchBar.classList.remove('sticky');
+      }
+    });
+  </script>
+
 </body>
 </html>
